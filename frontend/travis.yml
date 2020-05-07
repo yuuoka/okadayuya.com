@@ -8,3 +8,13 @@ before_install:
 
 script:
     - docker run yuuoka/okadayuya.com npm run test -- --coverage
+
+deploy:
+    provider: elasticbeanstalk
+    region: "us-east-2"
+    app: "docker"
+    env: "Docker-env"
+    bucket_name: "elasticbeanstalk-us-east-2-293330163922"
+    bucket_path: "docker"
+    on:
+        branch: master
