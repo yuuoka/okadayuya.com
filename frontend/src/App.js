@@ -20,7 +20,7 @@ function App() {
         </a>
       </header>
       <p>
-        I was changed!
+        I was changed　on thr 
       </p>
     </div>
   );
